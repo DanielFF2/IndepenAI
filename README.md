@@ -37,16 +37,21 @@ Checkpointing — Save and resume training at any point; the checkpoint includes
 
 Python 3.9 is recommended for best compatibility with Gym and Box2D environments.
 On Windows, make sure Python is added to your PATH in environment variables.
-# Install Dependencies
+Install Dependencies
+    
     bashpip install --upgrade pip wheel setuptools
     pip install torch numpy matplotlib gym[box2d]
     # [box2d] is required for BipedalWalker environments
     # Add gym[all] or other extras for additional environments
-# If you encounter wheel build errors (Box2D, MuJoCo), try pinning the gym version:
+    
+If you encounter wheel build errors (Box2D, MuJoCo), try pinning the gym version:
+
     bashpip install gym==0.21.0
-# or
+or
+
     pip install box2d-py
-# Clone the Repository
+Clone the Repository
+
     git clone https://github.com/DanielFF2/IndepenAI.git
     cd IndepenAI
 
