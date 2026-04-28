@@ -4,8 +4,8 @@ IndepenAI is a modular reinforcement learning agent based on Proximal Policy Opt
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Architecture
-----------------------------------------------------------------------------------------------------------------------------------
+## Architecture
+
 IndepenAI is built around three main components:
 ActorNetwork — Decides which action to take given the current state. Outputs the mean and standard deviation of a Gaussian distribution for continuous action spaces.
 
@@ -24,7 +24,7 @@ Plateau detection — Entropy coefficient is dynamically adjusted when recent re
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-What Can Be Customised
+## What Can Be Customised
 
 Network sizes — Change the number of layers or neurons in ActorNetwork and CriticNetwork.
 PPO hyperparameters — Learning rate, gamma, clip epsilon, batch size, entropy coefficient, update epochs.
@@ -33,7 +33,7 @@ Checkpointing — Save and resume training at any point; the checkpoint includes
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Installation
+## Installation
 
 Python 3.9 is recommended for best compatibility with Gym and Box2D environments.
 On Windows, make sure Python is added to your PATH in environment variables.
@@ -182,7 +182,8 @@ This is the full training script used with the current pg_agent.py. It uses 16 p
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Checkpoint Format
+## Checkpoint Format
+
 The checkpoint includes everything needed to resume training with no loss of state:
 actor_state_dict - Actor network weight
 critic_state_dict - Critic network weight
@@ -193,7 +194,7 @@ entropy_coef - Current entropy coefficient
 episode - Last completed episode 
 indexrewards - Full list of episode rewards
 
-Using Other Environments
+## Using Other Environments
 
 Change the environment name in gym.vector.make() and update state_size / action_size accordingly. 
 The agent works with any Gym-compatible environment that has a continuous action space.
