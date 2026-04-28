@@ -5,6 +5,7 @@ IndepenAI is a modular reinforcement learning agent based on Proximal Policy Opt
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Architecture
+----------------------------------------------------------------------------------------------------------------------------------
 IndepenAI is built around three main components:
 ActorNetwork — Decides which action to take given the current state. Outputs the mean and standard deviation of a Gaussian distribution for continuous action spaces.
 
