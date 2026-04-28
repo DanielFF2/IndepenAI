@@ -59,7 +59,7 @@ Clone the Repository
 
 Example — BipedalWalker Hardcore (PPO)
 
-This is the full training script used with the current pg_agent.py. It uses 16 parallel environments, running state normalisation, and saves checkpoints every 50 episodes.
+This is the full training script used with the current pg_agent.py. It uses 16 parallel environments, running state normalisation, and saves checkpoints every 50 episodes. There's a video showing how the agent performs after training!
 
     from pg_agent import PPOAgent
     import numpy as np
